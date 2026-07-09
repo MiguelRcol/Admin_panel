@@ -139,11 +139,10 @@ body {
   font-size: 26px;
 }
 
-.small-avatar,
-.large-avatar,
-.trend-avatar {
-  background-color: #facc15;
+.avatar {
   border-radius: 50%;
+  object-fit: cover;
+  background-color: #facc15;
 }
 
 .small-avatar {
