@@ -19,6 +19,20 @@ body {
   background-color: #1992d4;
   color: white;
   padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 40px;
+}
+.logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
 }
 
 .header {
@@ -41,4 +55,20 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+.nav-main,
+.nav-secondary {
+  display: grid;
+  gap: 18px;
+}
+
+.nav-secondary {
+  align-self: start;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
