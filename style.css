@@ -309,3 +309,11 @@ body {
 .project-name {
   color: #636363;
 }
+.card-actions img:hover,
+.sidebar a:hover,
+.header-buttons button:hover {
+  opacity: 0.8;
+}
+.header-buttons button {
+  transition: opacity 0.2s ease;
+}
