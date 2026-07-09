@@ -184,6 +184,8 @@ body {
 .project-card {
   min-height: 180px;
   border-left: 8px solid #facc15;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .project-card h4,
@@ -206,4 +208,12 @@ body {
 .side-card {
   display: grid;
   gap: 12px;
+}
+
+.card-actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 18px;
+  font-size: 20px;
 }
