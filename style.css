@@ -23,7 +23,7 @@ body {
   color: white;
   padding: 24px;
   display: grid;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto auto auto;
   align-content: start;
   gap: 48px;
 }
@@ -35,8 +35,10 @@ body {
   gap: 14px;
 }
 
-.logo span {
-  font-size: 28px;
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  filter: brightness(0) invert(1);
 }
 
 .logo h1 {
@@ -55,6 +57,16 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 21px;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
 }
 
 /* Header */
@@ -83,8 +95,9 @@ body {
   gap: 16px;
 }
 
-.search-bar span {
-  font-size: 24px;
+.header-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .search-bar input {
@@ -119,6 +132,7 @@ body {
 
 .greeting p {
   font-size: 16px;
+  font-weight: 500;
 }
 
 .greeting h2 {
@@ -221,8 +235,13 @@ body {
   display: grid;
   grid-auto-flow: column;
   justify-content: end;
-  gap: 20px;
-  font-size: 22px;
+  gap: 22px;
+}
+
+.card-actions img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .side-content {
