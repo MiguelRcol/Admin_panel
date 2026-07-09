@@ -5,14 +5,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  color: #111827;
 }
 
 .dashboard {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: auto 1fr;
 }
+
+/* Sidebar */
 
 .sidebar {
   grid-row: 1 / 3;
@@ -23,6 +26,7 @@ body {
   grid-template-rows: auto auto 1fr;
   gap: 40px;
 }
+
 .logo {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -35,27 +39,6 @@ body {
   margin: 0;
 }
 
-.header {
-  background-color: white;
-  padding: 20px;
-}
-
-.main-content {
-  background-color: #e2e8f0;
-  padding: 20px;
-}
-
-.nav-main {
-  display: grid;
-  gap: 16px;
-  margin-top: 40px;
-}
-
-.nav-main a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
 .nav-main,
 .nav-secondary {
   display: grid;
@@ -72,6 +55,9 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
+
+/* Header */
+
 .header {
   background-color: white;
   padding: 20px 40px;
@@ -124,7 +110,8 @@ body {
 }
 
 .small-avatar,
-.large-avatar {
+.large-avatar,
+.trend-avatar {
   background-color: #facc15;
   border-radius: 50%;
 }
@@ -153,6 +140,9 @@ body {
   font-weight: bold;
   padding: 10px 24px;
 }
+
+/* Main Content */
+
 .main-content {
   background-color: #e2e8f0;
   padding: 24px;
@@ -199,6 +189,14 @@ body {
   color: #636363;
 }
 
+.card-actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 18px;
+  font-size: 20px;
+}
+
 .side-content {
   display: grid;
   gap: 24px;
@@ -210,10 +208,57 @@ body {
   gap: 12px;
 }
 
-.card-actions {
+/* Announcements */
+
+.announcement {
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 16px;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.announcement h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.announcement p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Trending */
+
+.trending-card {
+  gap: 20px;
+}
+
+.trend {
   display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  gap: 18px;
-  font-size: 20px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 14px;
+}
+
+.trend-avatar {
+  width: 42px;
+  height: 42px;
+}
+
+.username,
+.project-name {
+  margin: 0;
+  font-size: 14px;
+}
+
+.username {
+  font-weight: bold;
+  color: black;
+}
+
+.project-name {
+  color: #636363;
 }
