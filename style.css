@@ -153,3 +153,57 @@ body {
   font-weight: bold;
   padding: 10px 24px;
 }
+.main-content {
+  background-color: #e2e8f0;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+}
+
+.projects h3,
+.announcements h3,
+.trending h3 {
+  margin-top: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.project-card,
+.side-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.project-card {
+  min-height: 180px;
+  border-left: 8px solid #facc15;
+}
+
+.project-card h4,
+.side-card h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.project-card p,
+.side-card p {
+  color: #636363;
+}
+
+.side-content {
+  display: grid;
+  gap: 24px;
+  align-content: start;
+}
+
+.side-card {
+  display: grid;
+  gap: 12px;
+}
